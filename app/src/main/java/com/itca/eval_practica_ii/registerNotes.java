@@ -24,20 +24,20 @@ public class registerNotes extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_notes);
-        list = findViewById(R.id.notasList);
-        text = findViewById(R.id.textView);
+        list = findViewById(R.id.notesList);
+        text = findViewById(R.id.texView);
 
-        ArrayList <String> valor = new ArrayList<>();
+        ArrayList<String> valor = new ArrayList<>();
 
 
         ConexionSQLite conexion = new ConexionSQLite(this);
         SQLiteDatabase bd = conexion.getWritableDatabase();
 
         Cursor fila = bd.rawQuery("select titulo from tb_Notas", null);
-        if(fila.moveToFirst()) {
+        if (fila.moveToFirst()) {
             do {
                 valor.add(fila.getString(0));
-            }  while (fila.moveToNext());
+            } while (fila.moveToNext());
         }
         bd.close();
 
@@ -58,3 +58,4 @@ public class registerNotes extends AppCompatActivity {
         });
 
     }
+}
