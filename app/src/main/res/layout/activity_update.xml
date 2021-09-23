@@ -84,7 +84,6 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
-            android:textColor="@color/black"
             android:text="Delete"
             android:onClick="deleteNote">
 
@@ -94,7 +93,6 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
-            android:textColor="@color/black"
             android:text="Update"
             android:onClick="update">
 
