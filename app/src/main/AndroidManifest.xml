@@ -8,21 +8,22 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Eval_practica_II">
+        android:theme="@style/Theme.Eval_practica_II" >
+        <activity
+            android:name=".update"
+            android:exported="true"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" >
+            </meta-data>
+        </activity>
         <activity
             android:name=".registerNotes"
             android:exported="true" />
         <activity
-            android:name=".update"
-            android:exported="true" />
-        <activity
-            android:name=".activity_actualizar"
-            android:exported="true" />
-        <activity
             android:name=".MainActivity"
-            android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.Eval_practica_II.NoActionBar">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -30,5 +31,4 @@
             </intent-filter>
         </activity>
     </application>
-
 </manifest>
