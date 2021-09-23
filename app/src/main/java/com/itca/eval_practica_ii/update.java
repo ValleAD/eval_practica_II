@@ -41,7 +41,7 @@ public class update extends AppCompatActivity {
             ConexionSQLite conexion = new ConexionSQLite(this);
             SQLiteDatabase bd = conexion.getWritableDatabase();
 
-            Cursor fila = bd.rawQuery("select descripcion, autor from tb_Notas where titulo = '" + x + "'"  , null);
+            Cursor fila = bd.rawQuery("select descripcion, autor from tb_bloc where titulo = '" + x + "'"  , null);
             if(fila.moveToFirst()) {
                 desc.setText(fila.getString(0));
                 autor.setText(fila.getString(1));
@@ -69,12 +69,12 @@ public class update extends AppCompatActivity {
         registro.put("descripcion", d);
         registro.put("autor", a);
 
-        int cant = bd.update("tb_Notas", registro, "titulo = '" + x + "'", null);
+        int cant = bd.update("tb_bloc", registro, "titulo = '" + x + "'", null);
         bd.close();
         if (cant == 1) {
-            Toast.makeText(this, "Nota Modificada", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Note Upgrade", Toast.LENGTH_SHORT).show();
         } else {
-            Toast.makeText(this, "Nota NO Modificada", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Note not Upgrade", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -83,13 +83,13 @@ public class update extends AppCompatActivity {
         ConexionSQLite conexion = new ConexionSQLite(this);
         SQLiteDatabase bd = conexion.getWritableDatabase();
         String t = titulo.getText().toString();
-        int cant = bd.delete("tb_Notas", "titulo = '" + x + "'", null);
+        int cant = bd.delete("tb_bloc", "titulo = '" + x + "'", null);
         bd.close();
         titulo.setText("");
         desc.setText("");
         autor.setText("");
 
-        Toast.makeText(this, "Nota Eliminada", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Note Delete", Toast.LENGTH_SHORT).show();
     }
 
 

@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         autor = findViewById(R.id.txtAutor);
     }
 
-    public void guardarNota(View view) {
+    public void saveNote(View view) {
 
         try {
             ConexionSQLite conexion = new ConexionSQLite(this);
@@ -62,10 +62,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void cambiar(View view) {
+    public void change(View view) {
         Intent intent = new Intent(this, registerNotes.class);
         startActivity(intent);
     }
-
-
 }

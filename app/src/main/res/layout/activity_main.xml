@@ -88,7 +88,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:textColor="@color/black"
-            android:onClick="guardarNota"
+            android:onClick="saveNote"
             android:text="Save Note">
 
         </Button>
@@ -98,7 +98,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:textColor="@color/black"
-            android:onClick="vernotas"
+            android:onClick="change"
             android:text="View Note">
 
         </Button>

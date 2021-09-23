@@ -96,7 +96,7 @@
             android:layout_marginLeft="5dp"
             android:textColor="@color/black"
             android:text="Update"
-            android:onClick="updateNote">
+            android:onClick="update">
 
         </Button>
 
