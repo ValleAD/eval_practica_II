@@ -33,7 +33,7 @@ public class registerNotes extends AppCompatActivity {
         ConexionSQLite conexion = new ConexionSQLite(this);
         SQLiteDatabase bd = conexion.getWritableDatabase();
 
-        Cursor fila = bd.rawQuery("select titulo from tb_Notas", null);
+        Cursor fila = bd.rawQuery("select titulo from tb_bloc", null);
         if (fila.moveToFirst()) {
             do {
                 valor.add(fila.getString(0));
@@ -52,7 +52,7 @@ public class registerNotes extends AppCompatActivity {
                 //String t = valor.get(position);
                 String t = (String) list.getItemAtPosition(position);
 
-                intent.putExtra("valorTitulo", t);
+                intent.putExtra("valorTitle", t);
                 startActivity(intent);
             }
         });

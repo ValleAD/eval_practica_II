@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
             registro.put("descripcion", d);
             registro.put("autor", a);
 
-            int result = (int) bd.insert("tb_Notas", null, registro);
+            int result = (int) bd.insert("tb_bloc", null, registro);
             bd.close();
 
             if (result > 0) {
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
                 desc.setText("");
                 autor.setText("");
             } else {
-                Toast.makeText(this, "NO Se guardo el registro", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "No Se guardo el registro", Toast.LENGTH_SHORT).show();
             }
 
 
@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void cambiar(View view) {
-        Intent intent = new Intent(this, registroNotas.class);
+        Intent intent = new Intent(this, registerNotes.class);
         startActivity(intent);
     }
 

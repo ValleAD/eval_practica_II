@@ -6,9 +6,11 @@ import android.view.View;
 
 import androidx.annotation.Nullable;
 
+import java.util.ArrayList;
+
 public class ConexionSQLite extends SQLiteOpenHelper {
     public ConexionSQLite(@Nullable Context context) {
-        super(context, "EvalNotas.db", null, 1);
+        super(context, "EvalblocNotas.db", null, 1);
     }
 
     /*public SQLiteDatabase bd() {
@@ -18,12 +20,12 @@ public class ConexionSQLite extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-        sqLiteDatabase.execSQL("create table tb_Notas(id integer not null primary key autoincrement, titulo text, descripcion text, autor text)");
+        sqLiteDatabase.execSQL("create table tb_bloc(id integer not null primary key autoincrement, titulo text, descripcion text, autor text)");
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
-        sqLiteDatabase.execSQL("drop table if exists tb_Notas");
+        sqLiteDatabase.execSQL("drop table if exists tb_bloc");
         onCreate(sqLiteDatabase);
     }
 
