@@ -3,16 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-<<<<<<< HEAD
         <entry key="..\:/Users/ITCA/AndroidStudioProjects/eval_practica_II/app/src/main/res/layout/activity_actualizar.xml" value="0.34791666666666665" />
         <entry key="..\:/Users/ITCA/AndroidStudioProjects/eval_practica_II/app/src/main/res/layout/activity_main.xml" value="0.3619791666666667" />
+        <entry key="..\:/Users/ITCA/AndroidStudioProjects/eval_practica_II/app/src/main/res/layout/activity_register_notes.xml" value="0.3619791666666667" />
         <entry key="..\:/Users/ITCA/AndroidStudioProjects/eval_practica_II/app/src/main/res/layout/activity_update.xml" value="0.34791666666666665" />
         <entry key="..\:/Users/ITCA/AndroidStudioProjects/eval_practica_II/app/src/main/res/layout/content_main.xml" value="0.3619791666666667" />
         <entry key="..\:/Users/ITCA/AndroidStudioProjects/eval_practica_II/app/src/main/res/layout/fragment_second.xml" value="0.3619791666666667" />
-=======
-        <entry key="..\:/Users/ITCA/Desktop/eval_practica_II/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/ITCA/Desktop/eval_practica_II/app/src/main/res/layout/content_main.xml" value="0.36666666666666664" />
->>>>>>> f4e06b310e2b31d403081fa84df4990ddace2c6d
       </map>
     </option>
   </component>
