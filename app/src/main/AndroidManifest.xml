@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Eval_practica_II">
         <activity
+            android:name=".registerNotes"
+            android:exported="true" />
+        <activity
+            android:name=".update"
+            android:exported="true" />
+        <activity
+            android:name=".activity_actualizar"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
