@@ -79,7 +79,7 @@ public class update extends AppCompatActivity {
     }
 
 
-    public void eliminarNota(View view) {
+    public void deleteNote(View view) {
         ConexionSQLite conexion = new ConexionSQLite(this);
         SQLiteDatabase bd = conexion.getWritableDatabase();
         String t = titulo.getText().toString();
