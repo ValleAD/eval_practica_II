@@ -11,8 +11,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class update extends AppCompatActivity {
-    /*Bundle bundle = getIntent().getExtras();
-    String t = (String) bundle.getString("titulo");*/
+
     public String x;
     public EditText v;
     public EditText titulo, desc, autor;
@@ -28,7 +27,7 @@ public class update extends AppCompatActivity {
 
         Bundle bundle = new Bundle();
 
-        String dato = getIntent().getStringExtra("valorTitulo");
+        String dato = getIntent().getStringExtra("valorTitle");
 
         v = findViewById(R.id.txtTitle);
         v.setText(dato);
